@@ -1,0 +1,13 @@
+label {
+    display: inline-block;
+    width:250px;
+    text-align: right;
+}
+
+button {
+    color: brown;
+    width: 15%;
+}
+.name{
+border-top: black;
+}

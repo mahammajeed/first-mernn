@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js">
+    </script>
+
+</head>
+<body>
+    <H1 style="font-size: large; font-style: italic; padding-left: 80px; ">REGISTRATION FORM </H1>
+    <div class="container">
+    <form id="REGISTRATION FORM"  style="padding-left: 80px; border: 20% black; ">
+        <div>
+        Name <br>
+        <input type="text" name="name" id="firstname" > 
+        <span id="name-error" style="color: rebeccapurple; display: none;">NAME IS INVALID</span>
+        <ul>
+            <li class="rq">Enter small/uppercase <br> letters and spaces only.</li>
+        </ul>
+    </div> 
+    <div>
+        Color <br>
+       
+        <input type="color" name="color" id="color"> <br>
+        
+    </div> <br>
+    <div>
+     URL <br>
+        <input type="url" name="URL" id="url"> <br>
+    </div> <br>
+
+    <div>
+    Age <br>
+        <input type="number" name="age" id="age"> <br>
+    </div> <br>
+    <div>
+        Mobile Number 
+        <br><input type="text" id="mobilenumber" value="" onchange=" myABC();" />
+        <span id="messages" style="color:red;"></span> <br>
+        <br>
+    Password <br>
+        <input type="password" name="Password" id="Password"> 
+        <ul>
+            <li class="rq">
+                at least 2 small, 1 upper case, <br> 2 digit and 2 special characters</li>
+        </ul>
+    </div> 
+    <div>
+        CNIC
+   <div>
+    <input type="text" name="cnic" id="cnic" value="" placeholder="*****-*******-*" onchange="cnic_validation(this);" />
+    <span id="messagetwo" style="color:red;"></span> 
+  </div> <BR>
+   <button id="submit" name="submit" >SUBMIT</button>
+    </form>
+</div>
+</body>
+</html>
